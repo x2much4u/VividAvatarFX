@@ -1,4 +1,4 @@
-<artifact identifier="vafx-doc-v0-10-0" type="text/html" title="VividAvatarFX ドキュメント Ver.0.14.0">
+<artifact identifier="vafx-doc-v0-10-0" type="text/html" title="VividAvatarFX ドキュメント Ver.0.15.0">
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -505,11 +505,25 @@
     </header>
 
     <div class="content">
-        4<h3>ドキュメントの最終更新 : 2025/10/05 - 22:44</h3>
-        <h3>最新パッケージ : Ver.0.14.0</h3>
+        4<h3>ドキュメントの最終更新 : 2025/10/06 - 21:08</h3>
+        <h3>最新パッケージ : Ver.0.15.0</h3>
         <p>更新は　<a href="https://drive.google.com/drive/folders/1N19suPlQQrEgIFD3m6_2mE1zWXPTNfZb?usp=sharing" target="_blank" style="color: #667eea; text-decoration: none;">ここ</a>　からDLできます。※テスターさん用、今だけ</p>
         <p></p>
 
+        <h2 id="changelog">Changelog - Ver.0.15.0</h2>
+        
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>全てのプロパティのレンジを0-1へ正規化</strong>
+            <p>一部のプロパティの正規化処理が正常にできなかった為、インスペクター側を正規化し、シェーダー側の処理で 受け取った値 * x とすることで今までと同じ表現力を保っています。</p>
+            <span class="step-number">2</span>
+            <strong>プリセット登録の処理変更</strong>
+            <p>上記に伴い処理を一部変更しました。</p>
+            <span class="step-number">3</span>
+            <strong>プリセット登録の際QOLを向上</strong>
+            <p>プリセットを選択時にJsonの中身を読み取り、既に設定済の場合はEnable xxxのチェックを読み取り、自動で設定するようになりました。</br>また、プリセット作成時にJsonファイルが作成されていましたが、ファイル名の後ろの配列が削除されました。同名のファイルが既に存在している場合は上書きするか確認、上書きしないと選択した場合は処理のみ実行、Jsonの出力はされないようになりました。</p>
+        </div>
+        
         <h2 id="changelog">Changelog - Ver.0.14.0</h2>
         
         <div class="step">
