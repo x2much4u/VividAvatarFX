@@ -1,4 +1,4 @@
-<artifact identifier="vafx-doc-v0-10-0" type="text/html" title="VividAvatarFX ドキュメント Ver.0.16.1">
+<artifact identifier="vafx-doc-v0-10-0" type="text/html" title="VividAvatarFX ドキュメント Ver.0.16.2">
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -505,11 +505,25 @@
     </header>
 
     <div class="content">
-        <h3>ドキュメントの最終更新 : 2025/10/07 - 15:14</h3>
-        <h3>最新パッケージ : Ver.0.16.1</h3>
+        <h3>ドキュメントの最終更新 : 2025/10/08 - 4:49</h3>
+        <h3>最新パッケージ : Ver.0.16.2</h3>
         <p>更新は　<a href="https://drive.google.com/drive/folders/1N19suPlQQrEgIFD3m6_2mE1zWXPTNfZb?usp=sharing" target="_blank" style="color: #667eea; text-decoration: none;">ここ</a>　からDLできます。※テスターさん用、今だけ</p>
         <p></p>
 
+        <h2 id="changelog">Changelog - Ver.0.16.2</h2>
+        
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Lift,GammaのAnimationが違う値を参照していた問題を修正</strong>
+            <p>Hue（色相）のみ正常に動作していたのが、Saturation（彩度）、Value（明度）も正常に動作するように正しいPathを指定しました。</p>
+            <span class="step-number">2</span>
+            <strong>Gamma調整の方のプレビューと出力される色が異なっていた問題を修正</strong>
+            <p>Gamma調整のプレビューと出力されていた色が完全に逆相だった問題を修正しました。</p>
+            <span class="step-number">2</span>
+            <strong>ベイクした値にリセットが正常に動作していなかった問題を修正</strong>
+            <p>VRCAvatarParameterDeiverに正常に焼きこみができていなかった問題を修正しました。</bt>これにより、セットアップ&ベイクを行った値にリセットができるようになります。</p>
+        </div>
+        
         <h2 id="changelog">Changelog - Ver.0.16.1</h2>
         
         <div class="step">
