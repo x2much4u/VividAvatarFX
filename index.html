@@ -1,4 +1,4 @@
-<artifact identifier="vafx-doc-v0-10-0" type="text/html" title="VividAvatarFX ドキュメント Ver.0.16.3">
+<artifact identifier="vafx-doc-v0-10-0" type="text/html" title="VividAvatarFX ドキュメント Ver.0.17.0">
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -505,11 +505,24 @@
     </header>
 
     <div class="content">
-        <h3>ドキュメントの最終更新 : 2025/10/08 - 18:59</h3>
-        <h3>最新パッケージ : Ver.0.16.3</h3>
+        <h3>ドキュメントの最終更新 : 2025/10/11 - 07:47</h3>
+        <h3>最新パッケージ : Ver.0.17.0</h3>
         <p>更新は　<a href="https://drive.google.com/drive/folders/1N19suPlQQrEgIFD3m6_2mE1zWXPTNfZb?usp=sharing" target="_blank" style="color: #667eea; text-decoration: none;">ここ</a>　からDLできます。※テスターさん用、今だけ</p>
         <p></p>
 
+        <h2 id="changelog">Changelog - Ver.0.17.0</h2>
+        
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>グリッチ/ラインシフト/横ライン 強度とブレンドが連動していたのを修正</strong>
+            <span class="step-number">2</span>
+            <strong>ライトの追加</strong>
+            <p>PointLightx3,SpotLightx4を追加しました。</br>SpotLightのみ影が落ちます。（SoftShadow）</br>自分のアバターの影のみカメラに映りません。他のアバターやオブジェクトの影は写真に写ります。これらはVRC側の不具合なのでどうしようもありません。この問題について詳しくは<a href="https://feedback.vrchat.com/bug-reports/p/local-players-dont-cast-shadows-caused-by-lights-in-avatars-on-cameras-1" target="_blank" style="color: #667eea; text-decoration: none;">Canny</a>で確認してください。</p>
+            <span class="step-number">※</span>
+            <strong>JP版のみ追加</strong>
+            <a>起きたらEN版も補完します。取り急ぎJP版のみ先行リリース。</a>
+        </div>
+        
         <h2 id="changelog">Changelog - Ver.0.16.3</h2>
         
         <div class="step">
@@ -517,7 +530,7 @@
             <strong>VAFX_とつくパラメーターにさらにVAFX_とついていた不具合の修正</strong>
             <p>VAFX_VAFX_xxxとなっていたパラメーターがあったので、そうならないように修正しました。</p>
             <span class="step-number">2</span>
-            <strong>コードのリファクタリング</strong></strong>
+            <strong>コードのリファクタリング</strong>
             <p>諸々同じ定義や処理を繰り返してたところをメソッド化し、最適化を行いました。</p>
         </div>
         
