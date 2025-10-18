@@ -1222,8 +1222,14 @@
                 <p><strong>A:</strong> <span class="ja-only">すべてのパラメーターは<code>Synced: false</code>のため、Expression Parametersの容量を消費しません。<strong>使用容量は0ビット</strong>です。</span><span class="en-only">All parameters are <code>Synced: false</code>, so they don't consume Expression Parameters capacity. <strong>Effectively uses 0 bits</strong>.</span></p>
 
                 <h3><span class="ja-only">Q: 他のカメラギミックと併用できますか？</span><span class="en-only">Q: Can I use it with other Camera Gimmick?</span></h3>
-                <p><strong>A:</strong> <span class="ja-only">基本的には可能ですが、レンダーキューの設定により表示順序が変わる場合があります。<br>競合が発生する場合は、レンダーキュー値を調整してください。</span><span class="en-only">Generally possible, but display order may change depending on render queue settings. <br>Adjust render queue values if conflicts occur.</span></p>
-
+                <p><strong>A:</strong> <span class="ja-only">このギミックでは現在描画されている画面に対してエフェクトをかけるので基本的には可能ですが、画面をゆがませるギミックに関しては相性が悪いです。切れ目が発生したり、エフェクトがかかりきらない箇所が出る場合があります。<br>また、描画順を変えたい場合はレンダーキュー値を調整してください。</span><p><strong>A:</strong> <span class="en-only">Since this gimmick applies effects to the currently rendered screen, it's generally possible to use with other camera gimmicks. However, it may not work well with gimmicks that distort the screen. You might experience visual breaks or areas where effects are not fully applied.<br>If you need to change the rendering order, please adjust the render queue values.</span>
+                <div class="info">
+                    <strong class="ja-only">💡 レンダーキューについて</strong>
+                    <strong class="en-only">💡 About Render Queue</strong>
+                    <p class="ja-only">Unityでは、数値が小さいほど先に（手前に）、大きいほど後に（奥に）描画されます。</p>
+                    <p class="en-only">In Unity, smaller values render first (front), larger values render later (back).</p>
+                </div>
+                
                 <h3><span class="ja-only">Q: アップデート時の手順は？</span><span class="en-only">Q: What's the update procedure?</span></h3>
                 <p><strong>A:</strong> <span class="ja-only">新しいバージョンをインポート後、Setup Toolで再度ベイクを実行してください。プリセットやカスタム設定は保持されます。</span><span class="en-only">After importing new version, re-bake with Setup Tool. Presets and custom settings will be preserved.</span></p>
 
